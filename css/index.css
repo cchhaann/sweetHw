@@ -1,0 +1,113 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+.banneritem{
+    display: flex;
+    justify-content: center;
+    height: 256px;
+    margin-top: -65px;
+    margin-bottom: 80px;
+    
+}
+.todyitem{
+    width: 260px;
+    background-color: rgba(63, 93, 69, 0.8);
+    backdrop-filter: blur(2px);
+    background-blend-mode: multiply;
+    background-image: url(https://bit.ly/2QbVsVR);
+    background-size: cover;
+    background-position: center center;display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.todytext{
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+}
+.todyitem:hover{
+    background-color: rgba(255, 225, 128, 0.8);
+}
+
+.popular{
+    width: 260px;
+    background-color: rgba(63, 93, 69, 0.8);
+    backdrop-filter: blur(2px);
+    background-blend-mode: multiply;
+    background-image: url(https://bit.ly/2Dwoxd7);
+    background-size: cover;
+    background-position: center center;display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+.popular:hover{
+    background-color: rgba(255, 225, 128, 0.8);
+}
+.populartext{
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+}
+.new{
+    width: 260px;
+    background-color: rgba(63, 93, 69, 0.8);
+    backdrop-filter: blur(2px);
+    background-blend-mode: multiply;
+    background-image: url(https://bit.ly/2OUteif);
+    background-size: cover;
+    background-position: center center;display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+.new:hover{
+    background-color: rgba(255, 225, 128, 0.8);
+}
+.newtext{
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+}
+.whyChoice{
+    background-image:url(https://bit.ly/2xPn7Eq);background-position: center;
+    height: 460px;
+    background-size: cover;
+    margin-top: -20px;
+}
+.whyChoiceText{
+    writing-mode: vertical-rl;
+    height: 280px;
+    color: #8DA291;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.whyChoicePic{
+    height: 307px;
+    margin-top: -20px;
+}
