@@ -50,59 +50,60 @@
             <div class="col-md-8 px-0" style="display: flex;flex-direction: column;">
                 <div style="background-color: #3F5D45;display: flex;flex-direction: column;justify-content: space-around;height: 100%;padding: 40px;">
                     <div style="display: flex;justify-content: space-between;">
-                        <p class="fs-2 fw-bold" style="color: #EAF0ED;">付款</p>
+                        <p class="fs-2 fw-bold" style="color: #EAF0ED;">發票</p>
                         <div style="display: flex;align-items: center;">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="color: #EAF0ED;">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                           </svg>
                           <hr style="border: 1px #EAF0ED solid;width: 61px;">
-                          <span class="material-symbols-outlined" style="color: #EAF0ED;">radio_button_checked</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="color: #EAF0ED;">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                          </svg>
                           <hr style="border: 1px #EAF0ED solid;width: 61px;">
                           <span class="material-symbols-outlined" style="color: #EAF0ED;">circle</span>
                         </div>   
                     </div>
                     <form style="display: flex;flex-direction: column;justify-content: space-around;height: 512px;">
-                      <div class="mb-3">
-                        <label for="exampleInputCrediCard" class="form-label" style="color: #EAF0ED;font-size: 20px;font-weight: bold;">信用卡卡號</label>
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="0912-345-678" aria-label="credit card" aria-describedby="basic-addon2" style="background-color: #EAF0ED;color: #8DA291;height: 56px;">
-                          <span class="input-group-text" id="basic-addon2" style="background-color: #EAF0ED;color: #8DA291;height: 56px;"><span class="material-symbols-outlined">credit_card</span></span>
-                        </div>
+                      <div class="mb-3 d-flex">
+                        <button type="button" class="btn" style="color: #EAF0ED;border: 1px solid #EAF0ED;width: 190px;">電子發票</button>
+                        <button type="button" class="btn" style="color:#3F5D45;background-color: #EAF0ED;width: 190px;border: 1px solid #EAF0ED">郵寄發票</button>
                       </div>
-                      <div class="row mb-3">
-                        <div class="row mb-3" style="display: flex;flex-direction: column;gap: 8px;">
-                            <label for="exampleInputEmail1" class="form-label" style="color: #EAF0ED;font-size: 20px;font-weight: bold;">持卡人姓名</label>
-                            <div class="col" style="display: flex; gap: 8px;color: #8DA291;height: 56px;">
-                              <input type="text" class="form-control" placeholder="王" aria-label="First name" style="background-color: #EAF0ED;color: #8DA291;height: 56px;">
-                              <input type="text" class="form-control" placeholder="小明" aria-label="Last name" style="background-color: #EAF0ED;color: #8DA291;height: 56px;">
-                            </div>
+                      <div class="row mb-3" style="display: flex;flex-direction: column;gap: 8px;">
+                        <div style="display: flex;justify-content: space-between;">
+                          <label for="exampleInputEmail1" class="form-label" style="color: #EAF0ED;font-size: 20px;font-weight: bold;">地址</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="color: #EAF0ED;font-size: 16px;font-weight: bold;">同運送地址</label>
+                          </div>
+                        </div>
+                        <div class="col" style="display: flex; gap: 8px;color: #8DA291;height: 56px;">
+                            <select class="form-select" size="1" aria-label="Size 3 select example" style="background-color: #EAF0ED;color: #8DA291;">
+                                <option selected>高雄市</option>
+                                <option value="1">屏東縣</option>
+                                <option value="2">屏東市</option>
+                                <option value="3">台東縣</option>
+                            </select>
+                            <select class="form-select" size="1" aria-label="Size 3 select example" style="background-color: #EAF0ED;color: #8DA291;">
+                                <option selected>新興區</option>
+                                <option value="1">前鎮區</option>
+                                <option value="2">三民區</option>
+                                <option value="3">苓雅區</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="幸福路 520 號" aria-label="Phone" style="background-color: #EAF0ED;color: #8DA291;height: 56px;">
                         </div>
                       </div>
                       <div class="row mb-3" style="display: flex;flex-direction: column;gap: 8px;">
-                        <label for="exampleInputEmail1" class="form-label" style="color: #EAF0ED;font-size: 20px;font-weight: bold;">有效期限</label>
-                          <div class="col" style="display: flex; gap: 8px;color: #8DA291;height: 56px;">
-                              <select class="form-select" size="1" aria-label="Size 3 select example" style="background-color: #EAF0ED;color: #8DA291;">
-                                  <option selected>月</option>
-                                  <option value="1">1月</option>
-                                  <option value="2">2月</option>
-                                  <option value="3">3月</option>
-                              </select>
-                              <select class="form-select" size="1" aria-label="Size 3 select example" style="background-color: #EAF0ED;color: #8DA291;">
-                                  <option selected>年</option>
-                                  <option value="1">2024</option>
-                                  <option value="2">2025</option>
-                                  <option value="3">2026</option>
-                              </select>
-                          </div>
-                          <div class="col">
-                            <label for="exampleInputCrediCard" class="form-label" style="color: #EAF0ED;font-size: 20px;font-weight: bold;">背面末三碼</label>
-                            <input type="text" class="form-control" placeholder="123" aria-label="Phone" style="background-color: #EAF0ED;color: #8DA291;height: 56px;">
-                          </div>
+                        <div class="col">
+                          <label for="exampleInputCrediCard" class="form-label" style="color: #EAF0ED;font-size: 20px;font-weight: bold;">統一編號（選填）</label>
+                          <input type="text" class="form-control" placeholder="12345678" aria-label="Phone" style="background-color: #EAF0ED;color: #8DA291;height: 56px;">
+                        </div>
                       </div>
                     </form>
                 </div>
                 <div class="d-grid gap-2">
-                  <a href="bill.html" class="btn" style="background-color: #FFE180;color: #3F5D45;font-size: 24px;display: flex;align-items: center;justify-content: center;" type="button">下一步</a>
+                    <a href="success.html" class="btn" style="background-color: #FFE180;color: #3F5D45;font-size: 24px;display: flex;align-items: center;justify-content: center;" type="button">下一步</a>
                 </div>
             </div>
             <div class="col-md-4 d-none d-md-none d-xl-block d-xxl-block">
